@@ -2,7 +2,53 @@
 <html>
     <head>
         <style>
- 
+   :root{
+     --bg:#f4f6f8;
+     --card:#fff;
+     --accent:#0b3d91;
+     font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+   }
+   body{ margin:0; background:var(--bg); color:#111; }
+   header{ background:#000; color:#fff; padding:36px 20px; text-align:center; }
+   header h1{ margin:0; font-size:28px; letter-spacing:0.3px;}
+   header p{ margin:6px 0 0; color:#cfcfcf; }
+   .wrap{ max-width:1200px; margin:28px auto; padding:0 16px; }
+   .estoque-container{
+     display:grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap:20px;
+     margin-top:22px;
+   }
+   .card-link{ text-decoration:none; color:inherit; }
+   .car-card{
+     background:var(--card);
+     border-radius:10px;
+     padding:12px;
+     box-shadow:0 6px 18px rgba(10,20,30,0.06);
+     transition: transform .18s, box-shadow .18s;
+     display:flex; flex-direction:column; height:100%;
+   }
+   .car-card:hover{ transform:translateY(-6px); box-shadow:0 18px 40px rgba(10,20,30,0.12); }
+   .car-thumb{
+     width:100%;
+     height:180px;
+     background:#fff;
+     border-radius:8px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     overflow:hidden;
+     margin-bottom:12px;
+   }
+   .car-thumb img{ width:100%; height:100%; object-fit:contain; display:block; }
+   .car-title{ font-weight:700; font-size:16px; margin:0 0 6px; }
+   .car-info{ color:#555; font-size:13px; margin-bottom:12px; line-height:1.2; }
+   .car-bottom{ margin-top:auto; display:flex; align-items:center; justify-content:space-between; gap:8px; }
+   .price{ background:#000; color:#fff; padding:8px 12px; border-radius:8px; font-weight:800; font-size:14px; }
+   .details-link{ color:var(--accent); font-weight:700; text-decoration:underline; font-size:13px; }
+   /* responsive */
+   @media (max-width:900px){ .estoque-container{ grid-template-columns: repeat(2, 1fr); } }
+   @media (max-width:600px){ .estoque-container{ grid-template-columns: 1fr; } header h1{ font-size:22px; } }
         </style>
          <link rel="icon" type="images/car.png" href="images/car.png">
     </head>
@@ -20,7 +66,783 @@
         <h1>VEÍCULOS</h1>
  </div>
 64 veiculos
-
+<div class="wrap">
+    <section class="estoque-container">
+    <!-- 1 -->
+    <a class="card-link" href="detalhes/audi-e-tron-gt.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/audi-e-tron-gt.jpg" alt="AUDI E-TRON GT"></div>
+    <h3 class="car-title">AUDI E-TRON GT ELÉTRICO SPORTBACK QUATTRO</h3>
+    <div class="car-info">2023/2023 • 8.845 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 450.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 2 -->
+    <a class="card-link" href="detalhes/audi-q8.jpg">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/audi-q8.jpg" alt="AUDI Q8"></div>
+    <h3 class="car-title">AUDI Q8 3.0 TFSI</h3>
+    <div class="car-info">2023/2023 • 24.633 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 489.750,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 3 -->
+    <a class="card-link" href="detalhes/audi-q8-e-tron.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/audi-q8-e-tron.jpg" alt="AUDI Q8 E-TRON"></div>
+    <h3 class="car-title">AUDI Q8 E-TRON 55</h3>
+    <div class="car-info">2023/2024 • 17.474 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 513.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 4 -->
+    <a class="card-link" href="detalhes/audi-rs-e-tron-gt.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/audi-rs-e-tron-gt.jpg" alt="AUDI RS E-TRON GT"></div>
+    <h3 class="car-title">AUDI RS E-TRON GT</h3>
+    <div class="car-info">2023/2023 • 11.161 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 650.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 5 -->
+    <a class="card-link" href="detalhes/bentley-bentayga.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/bentley-bentayga.jpg" alt="BENTLEY BENTAYGA"></div>
+    <h3 class="car-title">BENTLEY BENTAYGA 3.0 V6</h3>
+    <div class="car-info">2022/2022 • 17.688 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.100.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 6 -->
+    <a class="card-link" href="detalhes/bentley-continental.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/bentley-continental.jpg" alt="BENTLEY CONTINENTAL"></div>
+    <h3 class="car-title">BENTLEY CONTINENTAL 4.0 V8</h3>
+    <div class="car-info">2024/2025 • 1.678 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 3.900.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 7 -->
+    <a class="card-link" href="detalhes/bmw-x5.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/bmw-x5.jpg" alt="BMW X5"></div>
+    <h3 class="car-title">BMW X5 XDRIVE45E</h3>
+    <div class="car-info">2022/2022 • 12.657 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 424.750,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 8 -->
+    <a class="card-link" href="detalhes/bmw-x6.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/bmw-x6.jpg" alt="BMW X6"></div>
+    <h3 class="car-title">BMW X6 M COMPETITION</h3>
+    <div class="car-info">2024/2024 • 6.300 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.150.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 9 -->
+    <a class="card-link" href="detalhes/bmw-x7.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/bmw-x7.jpg" alt="BMW X7"></div>
+    <h3 class="car-title">BMW X7 M60I</h3>
+    <div class="car-info">2023/2024 • 12.213 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 870.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 10 -->
+    <a class="card-link" href="detalhes/cadillac-escalade-esv-premium.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/cadillac-escalade-esv-premium.jpg" alt="CADILLAC ESCALADE ESV"></div>
+    <h3 class="car-title">CADILLAC ESCALADE ESV PREMIUM LUXURY</h3>
+    <div class="car-info">2024/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.320.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 11 -->
+    <a class="card-link" href="detalhes/cadillac-escalade-esv-sport.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/cadillac-escalade-esv-sport.jpg" alt="CADILLAC ESCALADE ESV SPORT"></div>
+    <h3 class="car-title">CADILLAC ESCALADE ESV SPORT</h3>
+    <div class="car-info">2025/2025 • 67 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.180.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 12 -->
+    <a class="card-link" href="detalhes/ferrari-12cilindri-v12.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-12cilindri-v12.jpg" alt="FERRARI V12"></div>
+    <h3 class="car-title">FERRARI 12CILINDRI 6.5 V12</h3>
+    <div class="car-info">2025/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 7.900.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 13 -->
+    <a class="card-link" href="detalhes/ferrari-296-gtb.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-296-gtb.jpg" alt="FERRARI 296 GTB"></div>
+    <h3 class="car-title">FERRARI 296 GTB</h3>
+    <div class="car-info">2023/2024 • 2.718 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 3.290.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 14 -->
+    <a class="card-link" href="detalhes/ferrari-296-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-296-gts.jpg" alt="FERRARI 296 GTS"></div>
+    <h3 class="car-title">FERRARI 296 GTS</h3>
+    <div class="car-info">2024/2025 • 400 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.250.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 15 -->
+    <a class="card-link" href="detalhes/ferrari-812-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-812-gts.jpg" alt="FERRARI 812 GTS"></div>
+    <h3 class="car-title">FERRARI 812 GTS</h3>
+    <div class="car-info">2023/2023 • 787 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 6.300.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 16 -->
+    <a class="card-link" href="detalhes/ferrari-purosangue.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-purosangue.jpg" alt="FERRARI PUROSANGUE"></div>
+    <h3 class="car-title">FERRARI PUROSANGUE</h3>
+    <div class="car-info">2024/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 8.200.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 17 -->
+    <a class="card-link" href="detalhes/ferrari-roma-spider.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-roma-spider.jpg" alt="FERRARI ROMA SPIDER"></div>
+    <h3 class="car-title">FERRARI ROMA (SPIDER)</h3>
+    <div class="car-info">2024/2024 • 162 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 3.550.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 18 -->
+    <a class="card-link" href="detalhes/ferrari-roma.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-roma.jpg" alt="FERRARI ROMA"></div>
+    <h3 class="car-title">FERRARI ROMA</h3>
+    <div class="car-info">2022/2022 • 5.340 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.680.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 19 -->
+    <a class="card-link" href="detalhes/ferrari-sf90.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/ferrari-sf90.jpg" alt="FERRARI SF90"></div>
+    <h3 class="car-title">FERRARI SF90</h3>
+    <div class="car-info">2021/2022 • 6.733 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.950.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 20 -->
+    <a class="card-link" href="detalhes/lamborghini-huracan.jpg">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/lamborghini-huracan.jpg" alt="LAMBORGHINI HURACAN"></div>
+    <h3 class="car-title">LAMBORGHINI HURACÁN</h3>
+    <div class="car-info">2022/2023 • 2.255 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.265.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 21 -->
+    <a class="card-link" href="detalhes/lamborghini-revuelto.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/lamborghini-revuelto.jpg" alt="LAMBORGHINI REVUELTO"></div>
+    <h3 class="car-title">LAMBORGHINI REVUELTO</h3>
+    <div class="car-info">2024/2024 • 1.310 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 7.900.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 22 -->
+    <a class="card-link" href="detalhes/lamborghini-urus-2025.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/lamborghini-urus-2025.jpg" alt="LAMBORGHINI URUS 2025"></div>
+    <h3 class="car-title">LAMBORGHINI URUS (2025)</h3>
+    <div class="car-info">2025/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.400.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 23 -->
+    <a class="card-link" href="detalhes/lamborghini-urus-2024.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/lamborghini-urus-2024.jpg" alt="LAMBORGHINI URUS 2024"></div>
+    <h3 class="car-title">LAMBORGHINI URUS (2024)</h3>
+    <div class="car-info">2024/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.300.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 24 -->
+    <a class="card-link" href="detalhes/range-rover-evoque.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/range-rover-evoque.jpg" alt="RANGE ROVER EVOQUE"></div>
+    <h3 class="car-title">LAND ROVER RANGE ROVER EVOQUE</h3>
+    <div class="car-info">2023/2024 • 7.798 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 370.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 25 -->
+    <a class="card-link" href="detalhes/range-rover-sport-diesel.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/range-rover-sport-diesel.jpg" alt="RANGE ROVER SPORT DIESEL"></div>
+    <h3 class="car-title">RANGE ROVER SPORT D300</h3>
+    <div class="car-info">2021/2021 • 39.942 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 436.750,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 26 -->
+    <a class="card-link" href="detalhes/range-rover-sport-p550e.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/range-rover-sport-p550e.jpg" alt="RANGE ROVER SPORT P550E"></div>
+    <h3 class="car-title">RANGE ROVER SPORT P550E</h3>
+    <div class="car-info">2024/2025 • 7.200 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.100.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 27 -->
+    <a class="card-link" href="detalhes/mclaren-750s.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mclaren-750s.jpg" alt="MCLAREN 750S"></div>
+    <h3 class="car-title">MCLAREN 750S</h3>
+    <div class="car-info">2024/2024 • 5.439 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 3.900.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 28 -->
+    <a class="card-link" href="detalhes/mercedes-amg-gt-black-series.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-amg-gt-black-series.jpg" alt="MERCEDES AMG GT BLACK SERIES"></div>
+    <h3 class="car-title">MERCEDES-BENZ AMG GT BLACK SERIES</h3>
+    <div class="car-info">2021/2022 • 1.893 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 4.450.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 29 -->
+    <a class="card-link" href="detalhes/mercedes-amg-gt63.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-amg-gt63.jpg" alt="MERCEDES AMG GT63"></div>
+    <h3 class="car-title">MERCEDES-BENZ AMG GT 63</h3>
+    <div class="car-info">2025/2025 • 380 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.990.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 30 -->
+    <a class="card-link" href="detalhes/mercedes-g63.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-g63.jpg" alt="MERCEDES G63"></div>
+    <h3 class="car-title">MERCEDES-BENZ G63 AMG</h3>
+    <div class="car-info">2024/2024 • 3.908 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.290.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 31 -->
+    <a class="card-link" href="detalhes/mercedes-sl63-2022.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-sl63-2022.jpg" alt="MERCEDES SL63 2022"></div>
+    <h3 class="car-title">MERCEDES-BENZ SL 63 (2022)</h3>
+    <div class="car-info">2022/2022 • 10.458 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.390.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 32 -->
+    <a class="card-link" href="detalhes/mercedes-sl63-2023.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-sl63-2023.jpg" alt="MERCEDES SL63 2023"></div>
+    <h3 class="car-title">MERCEDES-BENZ SL 63 (2023)</h3>
+    <div class="car-info">2023/2024 • 632 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.549.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 33 -->
+    <a class="card-link" href="detalhes/mercedes-sl63-2025.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/mercedes-sl63-2025.jpg" alt="MERCEDES SL63 2025"></div>
+    <h3 class="car-title">MERCEDES-BENZ SL 63 (2025)</h3>
+    <div class="car-info">2025/2025 • 578 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.000.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 34 -->
+    <a class="card-link" href="detalhes/porsche-911-targa-4-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-targa-4-gts.jpg" alt="PORSCHE 911 TARGA 4 GTS"></div>
+    <h3 class="car-title">PORSCHE 911 TARGA 4 GTS</h3>
+    <div class="car-info">2024/2024 • 7.336 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.275.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 35 -->
+    <a class="card-link" href="detalhes/porsche-911-turbo.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-turbo.jpg" alt="PORSCHE 911 TURBO"></div>
+    <h3 class="car-title">PORSCHE 911 TURBO</h3>
+    <div class="car-info">2022/2022 • 7.822 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.250.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 36 -->
+    <a class="card-link" href="detalhes/porsche-911-carrera.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-carrera.jpg" alt="PORSCHE 911 CARRERA"></div>
+    <h3 class="car-title">PORSCHE 911 CARRERA (2025)</h3>
+    <div class="car-info">2025/2025 • 115 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.050.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 37 -->
+    <a class="card-link" href="detalhes/porsche-911-gt3-touring.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-gt3-touring.jpg" alt="PORSCHE 911 GT3 TOURING"></div>
+    <h3 class="car-title">PORSCHE 911 GT3 TOURING</h3>
+    <div class="car-info">2022/2022 • 4.680 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 2.090.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 38 -->
+    <a class="card-link" href="detalhes/porsche-911-cabriolet-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-cabriolet-gts.jpg" alt="PORSCHE 911 CABRIOLET GTS"></div>
+    <h3 class="car-title">PORSCHE 911 CABRIOLET GTS</h3>
+    <div class="car-info">2025/2025 • 350 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.490.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 39 -->
+    <a class="card-link" href="detalhes/porsche-911-turbo-s-cabriolet.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-turbo-s-cabriolet.jpg" alt="PORSCHE 911 TURBO S CABRIOLET"></div>
+    <h3 class="car-title">PORSCHE 911 TURBO S CABRIOLET</h3>
+    <div class="car-info">2022/2023 • 8.463 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.490.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 40 -->
+    <a class="card-link" href="detalhes/porsche-911-carrera-s-2023.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-carrera-s-2023.jpg" alt="PORSCHE 911 CARRERA S 2023"></div>
+    <h3 class="car-title">PORSCHE 911 CARRERA S</h3>
+    <div class="car-info">2023/2024 • 9.189 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 925.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 41 -->
+    <a class="card-link" href="detalhes/porsche-911-carrera-s-2023b.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-carrera-s-2023b.jpg" alt="PORSCHE 911 CARRERA S 2023 (B)"></div>
+    <h3 class="car-title">PORSCHE 911 CARRERA S (2023)</h3>
+    <div class="car-info">2023/2023 • 8.594 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.040.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 42 -->
+    <a class="card-link" href="detalhes/porsche-911-turbo-s-cabriolet-2.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-turbo-s-cabriolet-2.jpg" alt="PORSCHE 911 TURBO S CABRIOLET 2"></div>
+    <h3 class="car-title">PORSCHE 911 TURBO S CABRIOLET</h3>
+    <div class="car-info">2022/2023 • 2.234 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.750.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 43 -->
+    <a class="card-link" href="detalhes/porsche-911-gt3-rs.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-911-gt3-rs.jpg" alt="PORSCHE 911 GT3 RS"></div>
+    <h3 class="car-title">PORSCHE 911 GT3 RS</h3>
+    <div class="car-info">2024/2024 • 3.713 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 3.280.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 44 -->
+    <a class="card-link" href="detalhes/porsche-cayenne-e-hybrid.jpg">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-cayenne-e-hybrid.jpg" alt="PORSCHE CAYENNE E-HYBRID"></div>
+    <h3 class="car-title">PORSCHE CAYENNE E-HYBRID</h3>
+    <div class="car-info">2022/2023 • 21.130 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 594.750,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 45 -->
+    <a class="card-link" href="detalhes/porsche-cayenne-v8-turbo.jpg">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-cayenne-v8-turbo.jpg" alt="PORSCHE CAYENNE V8 TURBO"></div>
+    <h3 class="car-title">PORSCHE CAYENNE V8 TURBO</h3>
+    <div class="car-info">2022/2023 • 57.725 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 650.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 46 -->
+    <a class="card-link" href="detalhes/porsche-cayenne-gt-coupe.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-cayenne-gt-coupe.jpg" alt="PORSCHE CAYENNE GT COUPE"></div>
+    <h3 class="car-title">PORSCHE CAYENNE GT COUPÉ</h3>
+    <div class="car-info">2023/2024 • 5.100 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.250.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 47 -->
+    <a class="card-link" href="detalhes/porsche-cayenne-v8-2022b.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-cayenne-v8-2022b.jpg" alt="PORSCHE CAYENNE V8 2022B"></div>
+    <h3 class="car-title">PORSCHE CAYENNE V8 (2022)</h3>
+    <div class="car-info">2022/2023 • 5.622 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 870.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 48 -->
+    <a class="card-link" href="detalhes/porsche-cayenne-turbo-s-hybrid.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-cayenne-turbo-s-hybrid.jpg" alt="PORSCHE CAYENNE TURBO S HYBRID"></div>
+    <h3 class="car-title">PORSCHE CAYENNE TURBO S HYBRID</h3>
+    <div class="car-info">2022/2022 • 20.758 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 790.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 49 -->
+    <a class="card-link" href="detalhes/porsche-macan-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-macan-gts.jpg" alt="PORSCHE MACAN GTS"></div>
+    <h3 class="car-title">PORSCHE MACAN GTS</h3>
+    <div class="car-info">2022/2022 • 50.483 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 499.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 50 -->
+    <a class="card-link" href="detalhes/porsche-panamera-4s.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-panamera-4s.jpg" alt="PORSCHE PANAMERA 4S"></div>
+    <h3 class="car-title">PORSCHE PANAMERA 4S</h3>
+    <div class="car-info">2024/2025 • 3.675 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 1.080.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 51 -->
+    <a class="card-link" href="detalhes/porsche-panamera-4.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-panamera-4.jpg" alt="PORSCHE PANAMERA 4"></div>
+    <h3 class="car-title">PORSCHE PANAMERA 4</h3>
+    <div class="car-info">2025/2025 • 2.900 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 880.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 52 -->
+    <a class="card-link" href="detalhes/porsche-panamera-4b.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-panamera-4b.jpg" alt="PORSCHE PANAMERA 4 (ZERO)"></div>
+    <h3 class="car-title">PORSCHE PANAMERA 4 (ZERO)</h3>
+    <div class="car-info">2025/2026 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 980.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 53 -->
+    <a class="card-link" href="detalhes/porsche-taycan-gts.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/porsche-taycan-gts.jpg" alt="PORSCHE TAYCAN GTS"></div>
+    <h3 class="car-title">PORSCHE TAYCAN GTS</h3>
+    <div class="car-info">2023/2024 • 8.363 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 680.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 54 -->
+    <a class="card-link" href="detalhes/rolls-royce-spectre-1.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/rolls-royce-spectre-1.jpg" alt="ROLLS-ROYCE SPECTRE"></div>
+    <h3 class="car-title">ROLLS-ROYCE SPECTRE</h3>
+    <div class="car-info">2024/2025 • 0 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 6.200.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 55 -->
+    <a class="card-link" href="detalhes/rolls-royce-spectre-2.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/rolls-royce-spectre-2.jpg" alt="ROLLS-ROYCE SPECTRE 2"></div>
+    <h3 class="car-title">ROLLS-ROYCE SPECTRE (2)</h3>
+    <div class="car-info">2024/2025 • 2.312 km</div>
+    <div class="car-bottom">
+    <div class="price">R$ 5.900.000,00</div>
+    <div class="details-link">Ver detalhes</div>
+    </div>
+    </article>
+    </a>
+    <!-- 56 -->
+    <a class="card-link" href="detalhes/ford-ignored-1.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">(Se faltar alguma imagem, substitua em img/)</h3>
+    <div class="car-info">Informações completas estão nos cards acima</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 57 -->
+    <a class="card-link" href="detalhes/placeholder-2.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Se precisar de ajustes, me chama</h3>
+    <div class="car-info">Posso gerar as páginas de detalhes também</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 58 -->
+    <a class="card-link" href="detalhes/placeholder-3.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Caso queira eliminar placeholders eu ajusto</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 59 -->
+    <a class="card-link" href="detalhes/placeholder-4.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 60 -->
+    <a class="card-link" href="detalhes/placeholder-5.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 61 -->
+    <a class="card-link" href="detalhes/placeholder-6.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 62 -->
+    <a class="card-link" href="detalhes/placeholder-7.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 63 -->
+    <a class="card-link" href="detalhes/placeholder-8.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    <!-- 64 -->
+    <a class="card-link" href="detalhes/placeholder-9.html">
+    <article class="car-card">
+    <div class="car-thumb"><img src="img/placeholder.jpg" alt="placeholder"></div>
+    <h3 class="car-title">Placeholder</h3>
+    <div class="car-info">Placeholder</div>
+    <div class="car-bottom">
+    <div class="price">—</div>
+    <div class="details-link">—</div>
+    </div>
+    </article>
+    </a>
+    </section>
+    </div>
+    <!-- NOTA:
+          - As imagens devem ficar em img/<slug>.jpg (ex: img/audi-e-tron-gt.jpg).
+          - Os links apontam para detalhes/<slug>.html (ex: detalhes/audi-e-tron-gt.html).
+          - Se quiser, eu já gero as 64 páginas em detalhes/ agora (você escolheu gerar só o estoque por enquanto).
+     -->
 </body>
 </html>
 
