@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <style>
+   body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #999999;
+  color: #111;
+}
+
+.topo {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.car-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-info {
+  padding: 40px;
+  flex: 1;
+}
+
+.car-info h2 {
+  color: #b89b2c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.specs {
+  font-weight: bold;
+  color: #b89b2c;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 28px;
+  color: #b89b2c;
+  margin: 25px 0;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: oklch(69.653% 0.12819 93.652);
+  color: #000;
+}
+
+.car-image {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    .car-info {
+      max-width: 400px;
+    }
+
+    .car-info h2 {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      color: #111;
+      letter-spacing: 0.5px;
+    }
+
+    .car-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin: 6px 0 4px;
+      color: white; /* dourado mais suave */
+      letter-spacing: 1px;
+    }
+
+    .car-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 25px;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+.car-section .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .car-section .car-info {
+      flex: 0.9;
+      max-width: 350px;
+    }
+
+    .car-section .car-info h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+    }
+
+    .car-section .car-info h1 {
+      font-size: 46px;
+      font-weight: 800;
+      color: white;
+      margin: 5px 0;
+    }
+
+    .car-section .car-info h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      margin: 0 0 35px;
+    }
+
+    .car-section .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .car-section .menu-item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #777;
+    }
+
+    .car-section .menu-item.active {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .car-section .menu-item.active::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 1.5px;
+      background-color: #000000;
+      margin-right: 10px;
+    }
+
+    .car-section .images {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .car-section .images img {
+      width: 48%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .car-section .footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    .car-section .counter {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .car-section .line {
+      width: 100px;
+      height: 2px;
+      background-color: #b8932e;
+      border-radius: 2px;
+    }
+
+    .car-section .arrows {
+      display: flex;
+      gap: 10px;
+    }
+
+    .car-section .arrows button {
+      background-color: transparent;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    
+.descricao {
+  margin-left: 20px;
+  margin-top: 25px;
+  max-width: 900px;
+  color: #333;
+  line-height: 1.6;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concessionária Luxo</title>
+   <link rel="icon" type="images/car.png" href="images/car.png">
+</head>
+<body>
+  
+  <img src="images/CAPA DE CARRO" alt="Capa de carro" width="100%" height="380">
+
+  <header class="topo">
+    <h1>RDLautomoveis LUXURY CARS</h1>
+  </header>
+
+  <main class="container">
+    <section class="car-card">
+      <div class="car-info">
+        <h2>FERRARI PUROSANGUE</h2>
+        <p class="specs">6.5 V12 GASOLINA F1-DCT</p>
+        <p><strong>Ano:</strong> 2024/2025 | <strong>Km:</strong> 0 km</p>
+        <h3 class="price">R$ 8.500.000,00</h3>
+        <button class="btn">FAZER PROPOSTA</button>
+      </div>
+      <div class="car-image">
+        <img src="images/PURO SANGUE" alt="Ferrari Purosangue">
+      </div>
+    </section>
+
+  </main>
+
+ <section class="car-section">
+    <div class="container">
+      <div class="car-info">
+        <h2>FERRARI</h2>
+        <h1>PUROSANGUE</h1>
+        <h3>6.5 V12 GASOLINA F1-DCT</h3>
+
+        <div class="menu">
+          <div class="menu-item active">Imagens</div>
+          <div class="menu-item">Informação principais</div>
+        </div>
+      </div>
+
+      <div class="images">
+        <img src="images/INTERIOR FERRARIO PUROSANGUE" alt="Interior Ferrari Purosangue">
+        <img src="images/PAINEL FERRARI PURO SANGUE" alt="Painel Ferrari Purosangue">
+      </div>
+    </div>
+
+    <div class="descricao">
+      <p>
+       Ano 2025 e com 0 km, esta é a primeira Ferrari de quatro portas e quatro lugares — e, como não poderia deixar de ser, entrega uma performance à altura do Cavallino Rampante. O coração é um motor 6.5 V12 aspirado de 725 cv, câmbio de dupla embreagem de 8 marchas, aceleração de 0 a 100 km/h em 3,3 s e velocidade máxima de 312 km/h.
+No visual, pura exclusividade: Blu Pozzi com rodas forjadas aro 22” na frente e 23” atrás em Orbit Grey com face diamantada, além de elementos em fibra de carbono (spoiler, saias, para-lamas e difusor), ponteiras de escape pretas e os icônicos Scuderia Ferrari Shields.
+O interior combina couro e Alcântara Terra Bruciata, detalhes em black piano e alumínio, com tecnologia e sofisticação por todos os lados: head-up display, teto solar panorâmico, volante em fibra de carbono com shift lights, sistema de som high-end, interface Apple CarPlay® e Android Auto™, além do My Ferrari Connect.
+Conforto absoluto: bancos dianteiros com massagem e ventilação, bancos traseiros com aquecimento e ventilação, ar-condicionado digital de 4 zonas, carregador por indução, entrada keyless, soft close, e sistema de lift para vencer qualquer obstáculo sem perder elegância.
+Tecnologia embarcada inclui freios de carbono-cerâmica com pinças amarelas, modos de condução ICE, Wet, Comfort, Sport e ESC OFF, câmera 360°, sensores dianteiros e traseiros, e até sensor de qualidade do ar.
+O SUV da Ferrari não é apenas um SUV — é uma nova categoria. É Purosangue.
+      </p>
+    </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

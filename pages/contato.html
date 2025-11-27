@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - RDL Automóveis</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+       body {
+           background-color: #555;
+           color: #fff;
+           font-family: Arial, sans-serif;
+           margin: 0;
+       }
+       .contato-container {
+           max-width: 900px;
+           margin: 80px auto;
+           background: #333;
+           padding: 40px;
+           border-radius: 10px;
+           box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+       }
+       h1 {
+           text-align: center;
+           margin-bottom: 25px;
+           font-size: 32px;
+           letter-spacing: 2px;
+       }
+       .contato-info {
+           margin-bottom: 30px;
+           font-size: 18px;
+           line-height: 28px;
+       }
+       form input,
+       form textarea {
+           width: 100%;
+           padding: 12px;
+           margin-top: 10px;
+           margin-bottom: 18px;
+           border: none;
+           border-radius: 6px;
+           font-size: 16px;
+       }
+       form textarea {
+           height: 130px;
+           resize: none;
+       }
+       button {
+           width: 100%;
+           padding: 14px;
+           border: none;
+           background: #e40000;
+           color: #fff;
+           font-size: 18px;
+           cursor: pointer;
+           border-radius: 6px;
+           transition: 0.3s;
+       }
+       button:hover {
+           background: #ff1a1a;
+       }
+</style>
+</head>
+<body>
+<div class="contato-container">
+<h1>Contato</h1>
+<div class="contato-info">
+<p><strong>📍 Endereço:</strong> Rua da Mooca, 2869 – Mooca – SP</p>
+<p><strong>📞 Telefone:</strong> (11) 99999-9999</p>
+<p><strong>📧 E-mail:</strong> contato@rdlautomoveis.com</p>
+<p>Estamos disponíveis para tirar suas dúvidas e ajudar você a encontrar seu próximo carro!</p>
+</div>
+<form>
+<label>Nome</label>
+<input type="text" placeholder="Digite seu nome" required>
+<label>E-mail</label>
+<input type="email" placeholder="Digite seu e-mail" required>
+<label>Telefone</label>
+<input type="tel" placeholder="(11) 00000-0000">
+<label>Mensagem</label>
+<textarea placeholder="Escreva sua mensagem"></textarea>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</body>
+</html>

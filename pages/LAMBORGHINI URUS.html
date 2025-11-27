@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <style>
+   body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #999999;
+  color: #111;
+}
+
+.topo {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.car-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-info {
+  padding: 40px;
+  flex: 1;
+}
+
+.car-info h2 {
+  color: #b89b2c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.specs {
+  font-weight: bold;
+  color: #b89b2c;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 28px;
+  color: #b89b2c;
+  margin: 25px 0;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: oklch(69.653% 0.12819 93.652);
+  color: #000;
+}
+
+.car-image {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    .car-info {
+      max-width: 400px;
+    }
+
+    .car-info h2 {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      color: #111;
+      letter-spacing: 0.5px;
+    }
+
+    .car-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin: 6px 0 4px;
+      color: white; /* dourado mais suave */
+      letter-spacing: 1px;
+    }
+
+    .car-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 25px;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+.car-section .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .car-section .car-info {
+      flex: 0.9;
+      max-width: 350px;
+    }
+
+    .car-section .car-info h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+    }
+
+    .car-section .car-info h1 {
+      font-size: 46px;
+      font-weight: 800;
+      color: white;
+      margin: 5px 0;
+    }
+
+    .car-section .car-info h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      margin: 0 0 35px;
+    }
+
+    .car-section .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .car-section .menu-item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #777;
+    }
+
+    .car-section .menu-item.active {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .car-section .menu-item.active::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 1.5px;
+      background-color: #000000;
+      margin-right: 10px;
+    }
+
+    .car-section .images {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .car-section .images img {
+      width: 48%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .car-section .footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    .car-section .counter {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .car-section .line {
+      width: 100px;
+      height: 2px;
+      background-color: #b8932e;
+      border-radius: 2px;
+    }
+
+    .car-section .arrows {
+      display: flex;
+      gap: 10px;
+    }
+
+    .car-section .arrows button {
+      background-color: transparent;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    
+.descricao {
+  margin-left: 20px;
+  margin-top: 25px;
+  max-width: 900px;
+  color: #333;
+  line-height: 1.6;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concessionária Luxo</title>
+   <link rel="icon" type="images/car.png" href="images/car.png">
+</head>
+<body>
+
+  <header class="topo">
+    <h1>RDLautomoveis LUXURY CARS</h1>
+  </header>
+
+  <main class="container">
+    <section class="car-card">
+      <div class="car-info">
+        <h2>LAMBORGHINI URUS</h2>
+        <p class="specs">4.0 V8 TURBO PHEV SE AUTOMÁTICO</p>
+        <p><strong>Ano:</strong> 2024/2025 | <strong>Km:</strong> 0 km</p>
+        <h3 class="price">R$ 4.400.000,00</h3>
+        <button class="btn">FAZER PROPOSTA</button>
+      </div>
+      <div class="car-image">
+        <img src="images/URUS" alt="LAMBORGHINI URUS">
+      </div>
+    </section>
+
+  </main>
+
+ <section class="car-section">
+    <div class="container">
+      <div class="car-info">
+        <h2>FERRARI</h2>
+        <h1>LAMBORGHINI URUS</h1>
+        <h3>4.0 V8 TURBO PHEV SE AUTOMÁTICO</h3>
+
+        <div class="menu">
+          <div class="menu-item active">Imagens</div>
+          <div class="menu-item">Informação principais</div>
+        </div>
+      </div>
+
+      <div class="images">
+        <img src="images/INTERIOR FERRARI LAMBOGINI URUS" alt="Interior FERRARI LAMBOGINI">
+        <img src="images/INTERIOR FERRARI LAMBOGINI URUS 2" alt="Painel FERRARI LAMBOGINI ">
+      </div>
+    </div>
+
+    <div class="descricao">
+      <p>
+        O lamborghini urus se redefine o conceito de SUV esportivo ao unir performance, luxo e tecnologia em um só corpo. Equipado com um motor 4.0l v8 biturbo + elétrico com 800 cv, o modelo entrega uma potência impressionante combinada à eficiência de um sistema híbrido gasolina e elétrico. O conjunto mecânico é completado por um câmbio automático de 8 velocidades e tração integral, garantindo máxima aderência e controle em qualquer terreno. O resultado é uma aceleração de 0 a 100 km/h em apenas 3,4 segundos e velocidade máxima de 312 km/h, números que o colocam entre os SUVs mais rápidos do mundo.
+        O exterior, na marcante cor nero nemesis, reflete toda a agressividade e elegância típicas da marca. O acabamento exterior em black piano, presente na grade frontal, retrovisores, maçanetas e difusor traseiro, reforça a imponência visual, enquanto as rodas galanthus aro 23” pintadas em preto brilhante e as pinças de freio verdes em carbono cerâmica destacam o caráter esportivo. As ponteiras de escape esportivas em preto fosco, o logo lamborghini cromado e a projeção da logo iluminada nas portas completam o conjunto com um toque de exclusividade e sofisticação.
+        O interior é um espetáculo à parte. O ambiente combina couro bicolor em nero ade e verde scandal, com acabamentos em alumínio e black piano, criando uma atmosfera esportiva e refinada. Os bancos esportivos completamente elétricos, com aquecimento, ventilação e massagem, proporcionam conforto absoluto, enquanto o escudo lamborghini bordado nos encostos de cabeça em verde scandal, os cintos de segurança na mesma cor e o volante multifuncional com aro em couro perfurado aquecível e costuras em x reforçam a atenção aos detalhes. O pacote de iluminação ambiente adiciona um toque de personalização e luxo ao interior.
+        No quesito tecnologia, o urus se oferece o avançado sistema de som 3d bang & olufsen®, uma tela central de 12,3” e total conectividade com apple carplay® e android auto™. A experiência de condução é potencializada por recursos como o head-up display, keyless entry com fechamento suave das portas (soft close), adaptive cruise control e o seletor lamborghini anima modo offroad, que permite escolher entre 6 modos de condução: strada, sport, corsa, sabbia, terra e neve. Além disso, os sensores de estacionamento dianteiros e traseiros com surround-view garantem máxima segurança e conveniência.
+        O lamborghini urus se é mais do que um SUV — é uma declaração de poder, luxo e inovação. Uma fusão entre o espírito radical da marca italiana e a sofisticação de uma nova era eletrificada.
+      </p>
+    </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
